@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './main-pages.css'
-import {CardImg, Col, Container, Image, Row} from "react-bootstrap";
+import {CardImg, Col, Container, Image, Nav, Navbar, NavbarBrand, NavDropdown, NavLink, Row} from "react-bootstrap";
 import Spinner from "../../spinner";
 import CardHeader from "react-bootstrap/CardHeader";
 import {motion} from "framer-motion/dist/framer-motion"
@@ -9,27 +9,68 @@ export default class MainPages extends Component{
     render() {
         return(
             <React.Fragment>
-                <Container fluid className='re-store-header m-0 p-0'>
-
-                    <Row className='p-5'>
-                        <Col>
-                        <motion.div
-                            className="re-logotype"
-                            animate={{ rotate: 180 }}
-                            transition={{
-                                repeat: 2,
-                                repeatType: "reverse",
-                                duration: 3
-                            }}
-                        >
-                            <div className='re-logotype material-icons'>auto_stories</div>
-                        </motion.div>
-                    </Col>
-                        <Col>
-                            <h1 className='re-store-name'>ReBOOK</h1>
-                        </Col>
-
-                    </Row>
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                    <Container fluid className='p-1 m-0'>
+                        <Navbar.Brand href="#home">
+                            <h3 className='re-store-name d-flex align-items-center'>
+                                Re
+                                <motion.h3
+                                    className="p-2"
+                                    animate={{ rotate: 180 }}
+                                    transition={{
+                                        repeat: 2,
+                                        repeatType: "reverse",
+                                        duration: 3
+                                    }}
+                                >
+                                    <h1 className='re-logotype material-icons'>auto_stories</h1>
+                                </motion.h3>
+                                BOOK
+                            </h3>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav ju" />
+                        <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-between p-3 align-items-center'>
+                            <Nav className="me-auto">
+                                <NavDropdown title="Books" id="collasible-nav-dropdown" style={{fontSize: '26px'}}>
+                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="Fiction" id="collasible-nav-dropdown" style={{fontSize: '26px'}}>
+                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="Nonfiction" id="collasible-nav-dropdown" style={{fontSize: '26px'}}>
+                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown title="eBooks" id="collasible-nav-dropdown" style={{fontSize: '26px'}}>
+                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                </NavDropdown>
+                            </Nav>
+                            <Nav>
+                                <Nav.Link href="#deets" style={{fontSize: '26px'}}>More deets</Nav.Link>
+                                <Nav.Link eventKey={2} href="#memes" style={{fontSize: '26px'}}>
+                                    Dank memes
+                                </Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+                <div className='re-store-splint'/>
+                <Container fluid className='re-store-header m-0 p-4'>
                     <Row className='m-0'>
                         <Col className='d-flex justify-content-center align-items-center'>
                             <div className='re-logotype material-icons'>

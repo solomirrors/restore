@@ -18,7 +18,14 @@
 .re-store-name{
     font-family: 'Electrolize', sans-serif;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 54px;
+    text-align: center;
+}
+
+.re-navbar-link{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -27,6 +34,6 @@
 }
 
 .re-logotype{
-    font-size: 72px;
+    font-size: 48px;
     text-align: center;
 }
