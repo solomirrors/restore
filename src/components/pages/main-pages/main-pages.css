@@ -1,0 +1,32 @@
+.re-store-header{
+    background: rgb(255,253,253);
+    background: radial-gradient(circle, rgba(255,253,253,1) 0%, rgba(196,196,196,1) 50%, rgba(108,108,108,1) 100%);
+}
+
+.re-store-splint{
+    width: 100%;
+    height: 5px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,253,253,1) 25%, rgba(0,0,0,1) 100%);
+}
+
+.re-store-book{
+    background: rgb(255,253,253);
+    background: radial-gradient(circle, rgba(255,253,253,1) 0%, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 100%);
+}
+
+.re-store-name{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    text-align: center;
+}
+
+.re-store-bestseller{
+
+}
+
+.re-logotype{
+    font-size: 72px;
+    text-align: center;
+}
