@@ -1,3 +1,25 @@
+.btn-primary{
+    color: #000;
+    background-color: #ffffff;
+    border-color: #da4f4f;
+    font-weight: 400;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #da4f4f;
+}
+
+.re-header-bar{
+    background: rgb(207,207,207);
+    background: radial-gradient(circle, rgba(207,207,207,1) 0%, rgba(255,253,253,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.re-header-link{
+    background-color: #da4f4f;
+}
+
 .re-store-header{
     background: rgb(255,253,253);
     background: radial-gradient(circle, rgba(255,253,253,1) 0%, rgba(196,196,196,1) 50%, rgba(108,108,108,1) 100%);
@@ -29,11 +51,28 @@
     text-align: center;
 }
 
-.re-store-bestseller{
+#re-nav-dropdown{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.re-nav-dropdown{
 
 }
 
 .re-logotype{
     font-size: 48px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .re-store-name{
+        font-size: 27px;
+    }
+    #re-nav-dropdown{
+
+        text-align: center;
+    }
 }
