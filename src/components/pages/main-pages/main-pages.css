@@ -65,6 +65,7 @@
 .re-logotype{
     font-size: 48px;
     text-align: center;
+    color: #da4f4f;
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
@@ -106,6 +107,19 @@
     font-weight: 400;
     text-align: center;
     font-size: 48px;
+    color: #da4f4f;
+}
+
+.re-best-header{
+    min-height: 100%;
+}
+
+.re-best-text{
+    text-overflow: ellipsis;
+}
+
+.re-heart{
+    color: #da4f4f;
 }
 
 @media (max-width: 768px) {
