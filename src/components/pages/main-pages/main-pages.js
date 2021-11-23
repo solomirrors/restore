@@ -91,12 +91,12 @@ export default class MainPages extends Component{
                     <Carousel interval='8000' controls={false} indicators={true} touch={true} wrap={true} pause={false} variant="dark">
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780593186329_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>BETRAYAL</h1>
@@ -112,12 +112,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -132,12 +132,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -152,12 +152,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -172,12 +172,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -192,12 +192,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -212,12 +212,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -232,12 +232,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -252,12 +252,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -272,12 +272,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -292,12 +292,12 @@ export default class MainPages extends Component{
                         </CarouselItem>
                         <CarouselItem>
                             <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={1}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
                                     <Figure>
                                         <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                     </Figure>
                                 </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={11}>
+                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
                                     <Row className='row-cols-1'>
                                         <Col className='col-12'>
                                             <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
@@ -312,102 +312,38 @@ export default class MainPages extends Component{
                         </CarouselItem>
                     </Carousel>
                 </Container>
-                <Container fluid>
+                <Container fluid className='p-3 m-0'>
                     <h1>BESTSELLER</h1>
-                    <Row>
-                        <Col sm={12} lg={3} md={4}>
-                            <Row>
-                                <Col className='p-0 m-0'>
-                                    <CardHeader>
-                                        <Figure className='p-0 m-0'>
-                                            <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780063076099_p0_v13%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                        </Figure>
-                                        <h3 className='re-heart text-center'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                 fill="currentColor" className="bi bi-bookmark-heart"
-                                                 viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                      d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                                                <path
-                                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                            </svg>
-                                        </h3>
-                                    </CardHeader>
+                    <Row className='m-0 p-0'>
+                        <Col md={6} className='m-0 p-0'>
+                            <Row className='p-0 m-0'>
+                                <Col sm={7} className='m-0 p-0 d-flex align-items-stretch'>
+                                    <Card className=''>
+                                        <CardHeader className='align-items-baseline'>
+                                            <h3 className='text-center'>BERSERK</h3>
+                                        </CardHeader>
+                                        <p>In this “brave and heartbreaking novel that digs its claws into you and doesn’t let go, long after you’ve finished it” (Anna Todd, New York Times bestselling author) from the #1 New York Times bestselling author of All Your Perfects, a workaholic with a too-good-to-be-true romance can’t stop thinking about her first love.</p>
+                                    </Card>
                                 </Col>
-                                <Col className='p-0 m-0'>
-                                    DES
+                                <Col sm={5} className='best-card-col-figure p-0'>
+                                    <FigureImage className='best-card-img p-0' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781506711997_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col sm={12} lg={3} md={4}>
-                            <Row>
-                                <Col className='p-0 m-0'>
-                                    <CardHeader>
-                                        <Figure className='p-0 m-0'>
-                                            <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780811204811_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                        </Figure>
-                                        <h3 className='re-heart text-center'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                 fill="currentColor" className="bi bi-bookmark-heart"
-                                                 viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                      d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                                                <path
-                                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                            </svg>
-                                        </h3>
-                                    </CardHeader>
+                        <Col md={6} className='m-0 p-0'>
+                            <Row className='p-0 m-0'>
+                                <Col sm={7} className='m-0 p-0 d-flex justify-content-end align-items-end'>
+                                    <Card>
+                                        <CardHeader>
+                                            <h3 className='text-center'>BERSERK</h3>
+                                        </CardHeader>
+                                        <CardHeader>
+                                            <span>In this “brave and heartbreaking novel that digs its claws into you and doesn’t let go, long after you’ve finished it” (Anna Todd, New York Times bestselling author) from the #1 New York Times bestselling author of All Your Perfects, a workaholic with a too-good-to-be-true romance can’t stop thinking about her first love.</span>
+                                        </CardHeader>
+                                    </Card>
                                 </Col>
-                                <Col className='p-0 m-0'>
-                                    DES
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col sm={12} lg={3} md={4}>
-                            <Row>
-                                <Col className='p-0 m-0'>
-                                    <CardHeader>
-                                        <Figure className='p-0 m-0'>
-                                            <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780811204811_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                        </Figure>
-                                        <h3 className='re-heart text-center'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                 fill="currentColor" className="bi bi-bookmark-heart"
-                                                 viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                      d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                                                <path
-                                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                            </svg>
-                                        </h3>
-                                    </CardHeader>
-                                </Col>
-                                <Col className='p-0 m-0'>
-                                    DES
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col sm={12} lg={3} md={4}>
-                            <Row>
-                                <Col className='p-0 m-0'>
-                                    <CardHeader>
-                                        <Figure className='p-0 m-0'>
-                                            <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780811204811_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                        </Figure>
-                                        <h3 className='re-heart text-center'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                                 fill="currentColor" className="bi bi-bookmark-heart"
-                                                 viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                      d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                                                <path
-                                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                            </svg>
-                                        </h3>
-                                    </CardHeader>
-                                </Col>
-                                <Col className='p-0 m-0'>
-                                    DES
+                                <Col sm={5} className='best-card-col-figure p-0'>
+                                    <FigureImage className='best-card-img p-0' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781506711997_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                 </Col>
                             </Row>
                         </Col>
