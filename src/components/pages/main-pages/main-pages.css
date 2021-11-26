@@ -34,6 +34,15 @@
     background-color: #da4f4f;
 }
 
+.re-store-header-link-left{
+    width: 50%;
+}
+
+.re-store-header-link-right{
+    width: 50%;
+    justify-content: end;
+}
+
 .re-store-header{
     background: rgb(255,253,253);
     background: radial-gradient(circle, rgba(255,253,253,1) 0%, rgba(196,196,196,1) 50%, rgba(108,108,108,1) 100%);
@@ -101,12 +110,25 @@
     aspect-ratio: 0.7;
 }
 
-.best-card-row{
-
+.circle-slider-image{
+    background-color: #da4f4f;
+    border-radius: 10%;
+    width: 18em;
+    height: 25em;
+    z-index: 1;
+    margin: 60px;
 }
 
-.best-card-descol{
+.circle-image{
+    border-radius: 10%;
+}
 
+.circle-slider-circle{
+    position: absolute;
+    background-color: #cfcfcf;
+    width: 23em;
+    height: 23em;
+    border-radius: 50%;
 }
 
 .best-text{
@@ -166,6 +188,14 @@
 }
 
 @media (max-width: 430px) {
+    .re-store-header-link-left{
+
+        justify-content: right;
+    }
+    .re-store-header-link-right{
+
+        justify-content: left;
+    }
     .re-header-collapse{
         justify-content: center;
     }

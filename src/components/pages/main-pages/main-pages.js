@@ -40,9 +40,9 @@ export default class MainPages extends Component{
                             </motion.h3>
                             <p className='re-store-name-part p-0 m-0'>BOOK</p>
                         </h3>
-                        <Navbar.Collapse id="responsive-navbar-nav" className='re-header-collapse p-0 align-items-center'>
+                        <Navbar.Collapse id="responsive-navbar-nav" className='re-header-collapse p-0'>
                             <Nav className='w-100'>
-                                <div className='d-flex w-50'>
+                                <div className='re-store-header-link-left d-flex'>
                                     <NavLink>
                                         <Button className='d-flex justify-content-center align-items-center btn btn-outline-danger btn-lg'>
                                             <h2 className='re-store-button-elements m-1 px-1'>Theme</h2>
@@ -72,7 +72,7 @@ export default class MainPages extends Component{
                                         </Button>
                                     </NavLink>
                                 </div>
-                                <div className='d-flex w-50 justify-content-end'>
+                                <div className='re-store-header-link-right d-flex'>
                                     <NavLink>
                                         <Button className='d-flex justify-content-center align-items-center btn-outline-danger btn-lg'>
                                             <h2 className='re-store-button-elements m-1 px-1'>Login</h2>
@@ -153,6 +153,54 @@ export default class MainPages extends Component{
                     </Container>
                 </Navbar>
                 <div className='re-store-splint'/>
+
+                <Container fluid className='p-0 m-0'>
+                    <Row>
+                        <Col sm={4} className='d-flex justify-content-center align-items-center'>
+                            <div className='circle-slider-image'>
+                                <div className='w-10 h-100 p-1 d-flex justify-content-center align-items-center'>
+                                    <Image className='circle-image w-100 h-100' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781800180796_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
+                                </div>
+                            </div>
+                            <div className='circle-slider-circle d-flex justify-content-center align-items-center'/>
+                        </Col>
+                        <Col lg={6} className='d-flex justify-content-center align-items-center'>
+                            <Row>
+                                <Col sm={12}>
+                                    <h1>Cain's Jawbone: A Novel Problem</h1>
+                                </Col>
+                                <Col sm={12}>
+                                    <h4>by Edward Powys Mathers</h4>
+                                </Col>
+                                <Col sm={12}>
+                                    <NavDropdown.Divider />
+                                    <p>
+                                        Six murders. One hundred pages. Millions of possible combinations… but only one is correct. Can you solve Torquemada’s murder mystery?
+                                    </p>
+                                    <NavDropdown.Divider />
+                                </Col>
+                                <Col sm={12}>
+                                    <Row>
+                                        <Col sm={6}>
+                                            <h6>ISBN-13: 9781800180796</h6>
+                                            <h6>Publisher: 	Unbound</h6>
+                                            <h6>Publication date: 05/04/2021</h6>
+                                        </Col>
+                                        <Col sm={6}>
+                                            <h6>Pages: 224</h6>
+                                            <h6>Sales rank: 14</h6>
+                                            <h6>Product dimensions: 4.30(w) x 7.00(h) x (d)</h6>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col sm={2} className='d-flex justify-content-center align-items-center'>
+                            <div>SELECTOR</div>
+                        </Col>
+                    </Row>
+                </Container>
+
                 <Container fluid className='re-slider-bar p-0 m-0'>
                     <Carousel interval='8000' controls={false} indicators={true} touch={true} wrap={true} pause={false} variant="dark">
                         <CarouselItem>
