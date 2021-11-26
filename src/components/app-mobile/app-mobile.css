@@ -1,0 +1,20 @@
+.mobile-app-header{
+
+}
+
+.mobile-app-header-logotype{
+    text-align: left;
+}
+
+/*Small*/
+@media (max-width: 768px) {
+
+}
+
+/*Extra Small*/
+@media (max-width: 576px) {
+    .mobile-app-header-logotype{
+        width: 100%;
+        text-align: center;
+    }
+}

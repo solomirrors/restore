@@ -11,6 +11,20 @@
     background-color: #da4f4f;
 }
 
+.btn-primary {
+    color: #000000;
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #ffffff;
+    background-color: #da4f4f;
+    border-color: #da4f4f;
+    box-shadow: 0 0 0 0.25rem #e8b2b2;
+}
+
+
 .re-header-bar{
     background: rgb(207,207,207);
     background: radial-gradient(circle, rgba(207,207,207,1) 0%, rgba(255,253,253,1) 100%, rgba(0,0,0,1) 100%);
@@ -40,15 +54,21 @@
 .re-store-name{
     font-family: 'Electrolize', sans-serif;
     font-weight: 400;
-    font-size: 54px;
+    font-size: 64px;
     text-align: center;
 }
 
-.re-navbar-link{
-    font-family: 'Electrolize', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
+.re-store-button-elements{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
     text-align: center;
+}
+
+.re-header-book-list{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 #re-nav-dropdown{
@@ -59,7 +79,7 @@
 }
 
 .re-logotype{
-    font-size: 48px;
+    font-size: 64px;
     text-align: center;
     color: #da4f4f;
 }
@@ -75,26 +95,22 @@
     margin-right: 13px;
 }
 
-.re-card-figure{
-    min-height: 500px;
-}
-
-.best-card-header{
-    min-height: 75%;
-}
-
-.best-card-col-figure{
-    margin-top: -50px;
-}
-
-.best-card-figure{
-    width: 100%;
-    height: 100%;
-}
-
 .best-card-img{
-    height: 80%;
+    height: 100%;
+    width: 100%;
     aspect-ratio: 0.7;
+}
+
+.best-card-row{
+
+}
+
+.best-card-descol{
+
+}
+
+.best-text{
+    max-height: 300px;
 }
 
 
@@ -129,6 +145,14 @@
     color: #da4f4f;
 }
 
+.re-slider-author{
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    color: #da4f4f;
+}
+
 .re-best-header{
     min-height: 100%;
 }
@@ -141,12 +165,39 @@
     color: #da4f4f;
 }
 
-@media (max-width: 768px) {
-    .re-store-name{
-        font-size: 27px;
+@media (max-width: 430px) {
+    .re-header-collapse{
+        justify-content: center;
     }
-    #re-nav-dropdown{
+    .re-store-name{
+        position: absolute;
+    }
+    .re-logotype{
+        display: none;
+    }
+}
 
+@media (max-width: 1086px) {
+    .re-store-button-elements{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-store-header-navlink{
+        font-size: 64px;
+        color: #fff;
+    }
+
+    .re-store-name-part{
+        display: none;
+    }
+
+    .re-motion-logotype{
+
+    }
+
+    #re-nav-dropdown{
         text-align: center;
     }
 }
