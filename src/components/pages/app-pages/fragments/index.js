@@ -1,2 +1,6 @@
-import AppHeader from "./app-header";
-export default AppHeader;
+import {appLogotype} from "./app-logotype";
+import {appButton} from "./app-button";
+
+export {
+    appLogotype, appButton
+}
