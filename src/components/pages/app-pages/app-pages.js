@@ -3,6 +3,7 @@ import './app-pages.css'
 import {Nav, Navbar, NavLink} from "react-bootstrap";
 import {appButton, appLogotype} from "./fragments";
 import {bag, doorOpen, moonStars, translate} from "../../svg";
+import Splint from "../../splint";
 
 export const AppPages = () => {
     return(
@@ -30,6 +31,7 @@ export const AppPages = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+            <Splint/>
         </React.Fragment>
     )
 }
