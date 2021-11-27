@@ -1,26 +1,25 @@
-import React, {Component, useEffect, useState} from "react";
+import React, {Component} from "react";
 import './main-pages.css'
 import {
-    Button, Card, CardGroup,
-    CardImg, Carousel, CarouselItem,
+    Button,
+    Carousel,
+    CarouselItem,
     Col,
     Container, Figure,
     Image,
     Nav,
     Navbar,
-    NavbarBrand,
     NavDropdown,
     NavLink,
     Row
 } from "react-bootstrap";
-import Spinner from "../../spinner";
-import CardHeader from "react-bootstrap/CardHeader";
 import {motion} from "framer-motion/dist/framer-motion"
-import FigureImage from "react-bootstrap/FigureImage";
+import {withMediator} from "../../hoc";
 
-export default class MainPages extends Component{
-
+class MainPages extends Component{
     render() {
+        const {rmWidth, rmHeight} = this.props;
+
         return(
             <React.Fragment>
                 <Navbar className='m-0 p-0 re-header-bar'>
@@ -155,318 +154,78 @@ export default class MainPages extends Component{
                 <div className='re-store-splint'/>
 
                 <Container fluid className='p-0 m-0'>
-                    <Row>
-                        <Col sm={4} className='d-flex justify-content-center align-items-center'>
+                    <Row className='p-0 m-0'>
+                        <Col lg={3} className='p-0 my-2 d-flex justify-content-center align-items-center'>
                             <div className='circle-slider-image'>
                                 <div className='w-10 h-100 p-1 d-flex justify-content-center align-items-center'>
-                                    <Image className='circle-image w-100 h-100' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781800180796_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
+                                    <Image className='circle-image w-100 h-100' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780062457806_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
                                 </div>
                             </div>
                             <div className='circle-slider-circle d-flex justify-content-center align-items-center'/>
                         </Col>
-                        <Col lg={6} className='d-flex justify-content-center align-items-center'>
-                            <Row>
-                                <Col sm={12}>
-                                    <h1>Cain's Jawbone: A Novel Problem</h1>
-                                </Col>
-                                <Col sm={12}>
-                                    <h4>by Edward Powys Mathers</h4>
-                                </Col>
-                                <Col sm={12}>
-                                    <NavDropdown.Divider />
-                                    <p>
-                                        Six murders. One hundred pages. Millions of possible combinations… but only one is correct. Can you solve Torquemada’s murder mystery?
-                                    </p>
-                                    <NavDropdown.Divider />
-                                </Col>
-                                <Col sm={12}>
-                                    <Row>
-                                        <Col sm={6}>
-                                            <h6>ISBN-13: 9781800180796</h6>
-                                            <h6>Publisher: 	Unbound</h6>
-                                            <h6>Publication date: 05/04/2021</h6>
-                                        </Col>
-                                        <Col sm={6}>
-                                            <h6>Pages: 224</h6>
-                                            <h6>Sales rank: 14</h6>
-                                            <h6>Product dimensions: 4.30(w) x 7.00(h) x (d)</h6>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col sm={2} className='d-flex justify-content-center align-items-center'>
-                            <div>SELECTOR</div>
-                        </Col>
-                    </Row>
-                </Container>
-
-                <Container fluid className='re-slider-bar p-0 m-0'>
-                    <Carousel interval='8000' controls={false} indicators={true} touch={true} wrap={true} pause={false} variant="dark">
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9780593186329_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>BETRAYAL</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
+                        <Col lg={rmWidth < 1430 ? 7 : 9} className={rmWidth < 1430  ? '' : rmWidth > 992 ? 'offset-1' : '' + 'carousel-right-col p-0 my-2 d-flex align-items-center'}>
+                            <Carousel className='w-100 h-100'  interval='8000' controls={false} indicators={true} touch={true} wrap={true} pause={false} indicatorLabels={['1', '2']} variant="dark">
+                                <CarouselItem>
+                                    <Row className='p-0 m-0'>
                                         <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Picking up where the New York Times bestselling Front Row at the Trump Show left off, this is the explosive look at the aftermath of the election—and the events that followed Donald Trump’s leaving the White House—from ABC News' chief Washington correspondent.
+                                            <h1 className='re-slider-name'>They Both Die at the End</h1>
+                                            <h4 className='re-slider-author'>by Adam Silvera</h4>
+                                            <NavDropdown.Divider />
+                                            <p className='re-slider-text' style={{fontSize: '28px'}}>
+                                                Adam Silvera reminds us that there’s no life without death and no love without loss in this devastating yet uplifting story about two people whose lives change over the course of one unforgettable day.
                                             </p>
+                                            <NavDropdown.Divider />
+                                            <div className='d-flex justify-content-around align-items-end'>
+                                                <h6 className=''>ISBN-13: 9780062457806</h6>
+                                                <h6 className=''>Publisher: HarperCollins Publishers</h6>
+                                                <h6 className=''>Publication date: 12/18/2018</h6>
+                                                <h6 className=''>Pages: 416</h6>
+                                                <h6 className=''>Age Range:	14 - 17 Years</h6>
+                                            </div>
                                         </Col>
                                     </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
+                                </CarouselItem>
+                                <CarouselItem>
+                                    <Row className='p-0 m-0'>
                                         <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
+                                            <h1 className='re-slider-name'>They Both Die at the End</h1>
+                                            <h4 className='re-slider-author'>by Adam Silvera</h4>
+                                            <NavDropdown.Divider />
+                                            <p className='re-slider-text' style={{fontSize: '28px'}}>
+                                                Adam Silvera reminds us that there’s no life without death and no love without loss in this devastating yet uplifting story about two people whose lives change over the course of one unforgettable day.
+                                            </p>
+                                            <NavDropdown.Divider />
+                                            <div className='d-flex justify-content-around align-items-end'>
+                                                <h6 className=''>ISBN-13: 9780062457806</h6>
+                                                <h6 className=''>Publisher: HarperCollins Publishers</h6>
+                                                <h6 className=''>Publication date: 12/18/2018</h6>
+                                                <h6 className=''>Pages: 416</h6>
+                                                <h6 className=''>Age Range:	14 - 17 Years</h6>
+                                            </div>
                                         </Col>
                                     </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
+                                </CarouselItem>
+                                <CarouselItem>
+                                    <Row className='p-0 m-0'>
                                         <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
+                                            <h1 className='re-slider-name'>They Both Die at the End</h1>
+                                            <h4 className='re-slider-author'>by Adam Silvera</h4>
+                                            <NavDropdown.Divider />
+                                            <p className='re-slider-text' style={{fontSize: '28px'}}>
+                                                Adam Silvera reminds us that there’s no life without death and no love without loss in this devastating yet uplifting story about two people whose lives change over the course of one unforgettable day.
+                                            </p>
+                                            <NavDropdown.Divider />
+                                            <div className='d-flex justify-content-around align-items-end'>
+                                                <h6 className=''>ISBN-13: 9780062457806</h6>
+                                                <h6 className=''>Publisher: HarperCollins Publishers</h6>
+                                                <h6 className=''>Publication date: 12/18/2018</h6>
+                                                <h6 className=''>Pages: 416</h6>
+                                                <h6 className=''>Age Range:	14 - 17 Years</h6>
+                                            </div>
                                         </Col>
                                     </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <Row className='p-3 m-0'>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={4} lg={3} xl={2} xxl={2}>
-                                    <Figure>
-                                        <FigureImage className='re-slider-img p-0 img-fluid' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781510766808_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col className='p-0 m-0 d-flex justify-content-center align-items-center' xs={12} sm={12} md={8} lg={9} xl={10} xxl={10}>
-                                    <Row className='row-cols-1'>
-                                        <Col className='col-12'>
-                                            <h1 className='re-slider-name'>The Real Anthony Fauci</h1>
-                                            <h4 className='re-slider-author'>Robert F. Kennedy Jr.</h4>
-                                        </Col>
-                                        <Col>
-                                            <p className='re-slider-text p-4'>
-                                                Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.</p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </CarouselItem>
-                    </Carousel>
-                </Container>
-                <Container fluid className='p-3 m-0'>
-                    <h1>BESTSELLER</h1>
-                    <Row className='best-card-row p-0 m-0'>
-                        <Col sm={12} md={12} lg={12} xl={6} className='m-0 p-1'>
-                            <Row className='p-0 m-0'>
-                                <Col sm={12} className='p-0 m-0' style={{backgroundColor: '#da4f4f'}}>BERSERK</Col>
-                                <Col className='p-0 m-0'>
-                                    Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.
-                                </Col>
-                                <Col sm={12} md={3} lg={3} xl={4} className='p-0 m-0 d-flex justify-content-center'>
-                                    <Figure className='p-0 m-0'>
-                                        <FigureImage className='best-card-img p-0' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781506711997_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col sm={12} className='p-0 m-0' style={{backgroundColor: '#da4f4f'}}>DES</Col>
-                            </Row>
-                        </Col>
-                        <Col sm={12} md={12} lg={12} xl={6} className='m-0 p-1'>
-                            <Row className='p-0 m-0'>
-                                <Col sm={12} className='p-0 m-0' style={{backgroundColor: '#da4f4f'}}>BERSERK</Col>
-                                <Col className='p-0 m-0'>
-                                    Pharma-funded mainstream media has convinced millions of Americans that Dr. Anthony Fauci is a hero. He is anything but.
-                                </Col>
-                                <Col sm={12} md={3} lg={3} xl={4} className='p-0 m-0 d-flex justify-content-center'>
-                                    <Figure className='p-0 m-0'>
-                                        <FigureImage className='best-card-img p-0' src='https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B550%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&product=path%5B/pimages/9781506711997_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D'/>
-                                    </Figure>
-                                </Col>
-                                <Col sm={12} className='p-0 m-0' style={{backgroundColor: '#da4f4f'}}>DES</Col>
-                            </Row>
+                                </CarouselItem>
+                            </Carousel>
                         </Col>
                     </Row>
                 </Container>
@@ -474,3 +233,5 @@ export default class MainPages extends Component{
         )
     }
 }
+
+export default withMediator(MainPages);
