@@ -1,0 +1,16 @@
+.app-navbar{
+    background-color: #da4f4f;
+}
+
+.app-navbar-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#app-navbar-nav-dropdown{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
