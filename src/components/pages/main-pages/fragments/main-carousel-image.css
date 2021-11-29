@@ -1,39 +1,27 @@
-.main-carousel-elements-circle{
+.main-carousel-elements-circle,
+.main-carousel-elements-circle-select,
+.main-carousel-elements-circle-start,
+.main-carousel-elements-circle-end{
     position: absolute;
     background-color: #da4f4f;
     width: 14vw;
     height: 16vw;
     z-index: -1;
 }
-
 .main-carousel-elements-circle-start {
-    position: absolute;
-    background-color: #da4f4f;
-    width: 14vw;
-    height: 16vw;
-    z-index: -1;
     border-radius: 120px 0px 0px 120px;
 }
-
 .main-carousel-elements-circle-end {
-    position: absolute;
-    background-color: #da4f4f;
-    width: 14vw;
-    height: 16vw;
-    z-index: -1;
     border-radius: 0px 120px 120px 0px;
 }
-
 .main-carousel-elements-circle-select{
-    position: absolute;
-    background-color: #da4f4f;
     width: 24vw;
     height: 24vw;
     border-radius: 50%;
-    z-index: -1;
 }
 
-.main-carousel-elements-image{
+.main-carousel-elements-image,
+.main-carousel-elements-image-select{
     width: 10vw;
     height: 16vw;
     border-radius: 10%;
@@ -43,8 +31,6 @@
 .main-carousel-elements-image-select{
     width: 16vw;
     height: 24vw;
-    border-radius: 20px;
-    border: 4px solid #cfcfcf;
 }
 
 @media (max-width: 992px){
@@ -64,13 +50,34 @@
         width: 20vw;
         height: 28vw;
     }
-    .main-carousel-elements-circle-start {
+    .main-carousel-elements-circle-start,
+    .main-carousel-elements-circle-end{
         width: 20vw;
         height: 20vw;
     }
-    .main-carousel-elements-circle-end {
+}
+
+@media (max-width: 784px){
+    .main-carousel-elements-circle{
         width: 20vw;
         height: 20vw;
+    }
+    .main-carousel-elements-circle-select{
+        width: 36vw;
+        height: 36vw;
+    }
+    .main-carousel-elements-image{
+        width: 22vw;
+        height: 28vw;
+    }
+    .main-carousel-elements-image-select{
+        width: 28vw;
+        height: 36vw;
+    }
+    .main-carousel-elements-circle-start,
+    .main-carousel-elements-circle-end{
+        width: 33vw;
+        height: 28vw;
     }
 }
 

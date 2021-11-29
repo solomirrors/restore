@@ -8,7 +8,7 @@ export default class MainCarouselImage extends Component {
         const _circle = "main-carousel-elements-circle";
         const _image = "main-carousel-elements-image";
 
-        const imageSelector = (src, select = false) => {
+        const imageSelector = (src, select = false, style = {}) => {
             return (
                 <div className='d-flex justify-content-center align-items-center'>
                     <div
