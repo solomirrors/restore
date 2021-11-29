@@ -1,0 +1,86 @@
+.main-carousel-elements-circle{
+    position: absolute;
+    background-color: #da4f4f;
+    width: 14vw;
+    height: 16vw;
+    z-index: -1;
+}
+
+.main-carousel-elements-circle-start {
+    position: absolute;
+    background-color: #da4f4f;
+    width: 14vw;
+    height: 16vw;
+    z-index: -1;
+    border-radius: 120px 0px 0px 120px;
+}
+
+.main-carousel-elements-circle-end {
+    position: absolute;
+    background-color: #da4f4f;
+    width: 14vw;
+    height: 16vw;
+    z-index: -1;
+    border-radius: 0px 120px 120px 0px;
+}
+
+.main-carousel-elements-circle-select{
+    position: absolute;
+    background-color: #da4f4f;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.main-carousel-elements-image{
+    width: 10vw;
+    height: 16vw;
+    border-radius: 10%;
+    border: 4px solid #cfcfcf;
+}
+
+.main-carousel-elements-image-select{
+    width: 16vw;
+    height: 24vw;
+    border-radius: 20px;
+    border: 4px solid #cfcfcf;
+}
+
+@media (max-width: 992px){
+    .main-carousel-elements-circle{
+        width: 20vw;
+        height: 20vw;
+    }
+    .main-carousel-elements-circle-select{
+        width: 32vw;
+        height: 28vw;
+    }
+    .main-carousel-elements-image{
+        width: 14vw;
+        height: 20vw;
+    }
+    .main-carousel-elements-image-select{
+        width: 20vw;
+        height: 28vw;
+    }
+    .main-carousel-elements-circle-start {
+        width: 20vw;
+        height: 20vw;
+    }
+    .main-carousel-elements-circle-end {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 576px){
+    .main-carousel-elements-circle-select{
+        width: 32vw;
+        height: 28vw;
+    }
+    .main-carousel-elements-image-select{
+        width: 95vw;
+        height: 130vw;
+    }
+}

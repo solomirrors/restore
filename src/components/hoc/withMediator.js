@@ -4,7 +4,7 @@ function withMediator(WrappedComponent) {
     return class extends React.Component {
         constructor(props) {
             super(props);
-            this.state = { rmWidth: 0, rmHeight: 0, crmWidth: 0, crmHeight: 0};
+            this.state = { rmWidth: 0, rmHeight: 0};
             this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         }
 
